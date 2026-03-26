@@ -4,7 +4,6 @@ description: 一个演示 skill，展示如何编写 agent skill 的基本结构
 triggers:
   - 当用户说 "演示 skill" 时
   - 当用户说 "show demo" 时
-  - 当用户问 "skill 怎么写" 时
 ---
 
 # Demo Skill - 演示 Skill
