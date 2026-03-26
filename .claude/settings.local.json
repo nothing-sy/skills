@@ -1,10 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Bash(git push:*)",
-      "Bash(CLAUDE_CODE_GIT_BASH_PATH=\"E:\\\\Git\\\\bin\\\\bash.exe\" claude mcp list)"
+      "mcp__github__get_file_contents",
+      "mcp__github__push_files",
+      "mcp__github__list_commits",
+      "mcp__github__create_issue",
+      "Skill(update-config)",
+      "Bash(mkdir -p /c/Users/Administrator/.claude/skills)",
+      "Bash(cp -r /d/projects/skills/skills/demo /d/projects/skills/skills/github /d/projects/skills/skills/hello /c/Users/Administrator/.claude/skills/)",
+      "Bash(ls:*)",
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(git reset:*)"
     ]
   }
 }
