@@ -25,7 +25,7 @@ user-invocable: true
 ### Pull Request 操作
 
 | MCP 工具 | 功能 |
-|----------|------|
+|----------|----------|
 | `mcp__github__create_pull_request` | 创建 PR |
 | `mcp__github__get_pull_request` | 获取 PR 详情 |
 | `mcp__github__list_pull_requests` | 列出 PR |
@@ -40,7 +40,7 @@ user-invocable: true
 ### Issue 操作
 
 | MCP 工具 | 功能 |
-|----------|------|
+|----------|----------|
 | `mcp__github__create_issue` | 创建 Issue |
 | `mcp__github__get_issue` | 获取 Issue 详情 |
 | `mcp__github__list_issues` | 列出 Issue |
@@ -50,7 +50,7 @@ user-invocable: true
 ### 仓库操作
 
 | MCP 工具 | 功能 |
-|----------|------|
+|----------|----------|
 | `mcp__github__get_file_contents` | 获取文件内容 |
 | `mcp__github__create_or_update_file` | 创建或更新文件 |
 | `mcp__github__push_files` | 批量推送文件 |
@@ -62,7 +62,7 @@ user-invocable: true
 ### 搜索操作
 
 | MCP 工具 | 功能 |
-|----------|------|
+|----------|----------|
 | `mcp__github__search_code` | 搜索代码 |
 | `mcp__github__search_issues` | 搜索 Issue/PR |
 | `mcp__github__search_repositories` | 搜索仓库 |
