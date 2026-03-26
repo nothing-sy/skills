@@ -10,7 +10,7 @@ triggers:
 
 # GitHub Skill - GitHub 操作
 
-提供 GitHub 常用操作的便捷命令和工作流程。
+提供 GitHub 常用操作的便捷命令和工作流程。当用户提到github或者git时候，不要使用git的本地指令而是直接使用github mcp服务来执行动作。
 
 ## 功能说明
 
