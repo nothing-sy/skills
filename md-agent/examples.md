@@ -130,3 +130,45 @@
 ````
 
 ` ```agent-skip ` 块永久忽略，不删除、不产出。
+
+---
+
+## 示例 5：时序图（Mermaid sequenceDiagram）
+
+**处理前：**
+
+````markdown
+# 账单分析模块
+
+```agent
+根据 src/api/modules/billAnalysis/index.ts 及相关调用链，在下方绘制「获取账单概览」请求的时序图（Mermaid sequenceDiagram），参与者需包含：前端、API 网关、BillAnalysis 服务、数据库。
+```
+
+## 获取账单概览时序图
+
+````
+
+**处理后：**
+
+````markdown
+# 账单分析模块
+
+## 获取账单概览时序图
+
+```mermaid
+sequenceDiagram
+    participant FE as 前端
+    participant GW as API 网关
+    participant SVC as BillAnalysis 服务
+    participant DB as 数据库
+
+    FE->>GW: GET /billAnalysis/overview
+    GW->>SVC: 转发请求（鉴权后）
+    SVC->>DB: 查询账单汇总
+    DB-->>SVC: 返回数据集
+    SVC-->>GW: 200 + JSON
+    GW-->>FE: 响应概览数据
+```
+````
+
+` ```agent ` 代码块已删除，下方保留 Mermaid 时序图代码块；指令可指定参与者、关键步骤或需覆盖的接口路径。
